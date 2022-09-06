@@ -78,7 +78,8 @@ flex-direction: column;
 }
 
 .selected {
-  border: 2px dashed #6E4555;
+  border: 2.5px dashed #52D2FF;
+  ;
 }
 
 .brown {
