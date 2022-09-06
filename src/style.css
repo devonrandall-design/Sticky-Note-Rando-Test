@@ -39,12 +39,14 @@ flex-direction: column;
 
 .note-container {
   border: 1px solid black;
-  height: 100vh;
+  min-height: 100vh;
   position: fixed;
   display: flex;
   padding: 20px;
   width: 100%;
   left: 3rem;
+  flex-wrap: wrap;
+  overflow-x: none;
   
 }
 
@@ -84,3 +86,4 @@ flex-direction: column;
   width: 25px;
   height: 25px;
 }
+

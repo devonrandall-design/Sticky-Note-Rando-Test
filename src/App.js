@@ -14,11 +14,14 @@ export default function App() {
     newColor(entercolor)
   }
 
+  let isNoteSelected = 
+
   
   
   function createNote() {
     const randoNumber = Math.random() * 20000
-    return <Note style={ {backgroundColor: 'blue' }}   key={randoNumber} />
+    console.log(color)
+    return <Note select={selec} noteColor={color}   key={randoNumber} />
   }
 
   function AddNote() {
