@@ -18,7 +18,7 @@ export default function App() {
   
   function createNote() {
     const randoNumber = Math.random() * 20000
-    return <Note  key={randoNumber} />
+    return <Note style={ {backgroundColor: 'blue' }}   key={randoNumber} />
   }
 
   function AddNote() {

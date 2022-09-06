@@ -8,6 +8,6 @@ const [selected, select] = useState(false)
 
 
 
-  return (<div style={{backgroundColor: props.noteColor}} select={selected} onClick={() => select(true)}  className={`note ${selected === true ? 'selected' : ''}`} >
+  return (<div select={selected} onClick={() => select(true)}  className={`note ${selected === true ? 'selected' : ''}`} >
   <textarea className="text"></textarea></div>)
 }
