@@ -10,11 +10,12 @@ export default function App() {
   
   const [color, newColor] = useState("#D282A6")
 
-  const [selected, select] = useState(false)
+  const [selected, useSelect] = useState(false)
 
   function selectANote() {
-select(true)
-console.log(selected)
+    useSelect(true)
+   
+  
   }
 
   function changeColor(entercolor) {
@@ -29,7 +30,7 @@ console.log(selected)
   function createNote() {
     const randoNumber = Math.random() * 20000
     console.log(color)
-    return <Note isNoteSelected={selected} selectingNotes={selectANote} noteColor={color}   key={randoNumber} />
+    return <Note onClick={useSelect(true)} selectNotes={selectANote} noteColor={color}   key={randoNumber} />
   }
 
   function AddNote() {
