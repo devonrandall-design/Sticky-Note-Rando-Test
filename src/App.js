@@ -8,9 +8,17 @@ export default function App() {
 
   const [notes, newNotes] = useState([])
   
+  const [color, newColor] = useState("#D282A6")
+
+  function changeColor(entercolor) {
+    newColor(entercolor)
+  }
+
+  
+  
   function createNote() {
     const randoNumber = Math.random() * 20000
-    return <Note key={randoNumber} />
+    return <Note  key={randoNumber} />
   }
 
   function AddNote() {
@@ -21,8 +29,8 @@ export default function App() {
 
   return (
     <div className="main">
-    <SideHeader AddNote={AddNote} />
-    <NoteSection content={notes} />
+    <SideHeader newColor={changeColor} noteColor={color} AddNote={AddNote} />
+    <NoteSection  noteColor={color} content={notes} />
 
     </div>
   );

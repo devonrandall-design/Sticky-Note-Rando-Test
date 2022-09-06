@@ -21,7 +21,8 @@ min-height: 100vh;
 background-color: #FFFFFF;
 position: fixed;
 display: flex;
-justify-content: center;
+align-items: center;
+flex-direction: column;
 
 }
 
@@ -76,4 +77,10 @@ justify-content: center;
 
 .selected {
   border: 2px dashed #6E4555;
+}
+
+.brown {
+  background-color: #6E4555;
+  width: 25px;
+  height: 25px;
 }

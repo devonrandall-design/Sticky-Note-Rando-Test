@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 
-export default function Note() {
+export default function Note(props) {
 
 const [selected, select] = useState(false)
 
@@ -8,6 +8,6 @@ const [selected, select] = useState(false)
 
 
 
-  return (<div onClick={() => select(true)}  className={`note ${selected === true ? 'selected' : ''}`} >
+  return (<div style={{backgroundColor: props.noteColor}} select={selected} onClick={() => select(true)}  className={`note ${selected === true ? 'selected' : ''}`} >
   <textarea className="text"></textarea></div>)
 }
